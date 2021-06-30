@@ -1,28 +1,59 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+        "jsx": true
     },
-    "parser": "babel-eslint",
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb",
-        "prettier"
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "require-await": ["error"],
+    "prettier/prettier": ["error"],
+    "max-len": [
+      2,
+      {
+        "code": 150,
+        "tabWidth": 2,
+        "ignoreStrings": true
+      }
     ],
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 12,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "prettier"
+    "no-underscore-dangle": 0,
+
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 1,
+
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/destructuring-assignment": 1,
+    "react/no-find-dom-node": 1,
+    "react/no-this-in-sfc": 1,
+
+    "jsx-a11y/click-events-have-key-events": 0,
+
+    "react/jsx-no-undef": [0, { "allowGlobals": true }],
+    "prefer-destructuring": 1,
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always",
+        "groups": ["builtin", "external", "internal", ["parent", "sibling", "index"]]
+      }
     ],
-    "rules": {
-        "prettier/prettier": "error",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/state-in-constructor": "off"
-    }
+    "react/prop-types": [2, { "skipUndeclared": true }],
+    "react/display-name": 0,
+  }
 }
