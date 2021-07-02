@@ -175,7 +175,7 @@ const Table = (props) => {
           <input
             value={searchName}
             onChange={(event) => SetSearchName(event.target.value)}
-            name="s"
+            name="searchName"
             placeholder="Искать здесь..."
             type="search"
           />
