@@ -1,7 +1,6 @@
 import React from 'react';
 
-// eslint-disable-next-line no-unused-vars
-const Header = (props) => (
+const Header = () => (
   <thead>
     <tr>
       <th>Id</th>
