@@ -38,17 +38,51 @@
 .search {
     margin: 10px;
     border-radius: 8px 0 0 8px;
+    display: inline-block;
 }
 .search input{
-    background: #d8d8d8;
-    border: 0px;
+    margin: 5px;
+    width: 400px;
+    height: 35px;
     border-radius: 8px;
-    color: black;
-    height: 2.3em;
-    width: 20em;
-    padding: 10px;
+    padding: 2px 12px;
 }
 .search input::placeholder {
     color: black;
 }
+.addTaskForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addTaskForm input{
+    margin: 5px;
+    width: 400px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 2px 12px;
+}
+
+button {
+    height: 38px;
+    border-radius: 8px;
+    border: 0px;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53 167 110) inset;
+    transition: 0.2s;
+}
+ button:hover {
+     background: rgb(53, 167, 110);
+     cursor: pointer;
+ }
+button:active {
+    background: rgb(33,147,90);
+    box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+
 
