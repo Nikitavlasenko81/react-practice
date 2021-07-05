@@ -7,13 +7,11 @@ export function App() {
   const [userList, setUserList] = useState(usersList);
   const [searchName, setSearchName] = useState('');
   return (
-    <>
-      <Table
-        userList={userList}
-        setUserList={setUserList}
-        searchName={searchName}
-        setSearchName={setSearchName}
-      />
-    </>
+    <Table
+      userList={userList}
+      setUserList={setUserList}
+      searchName={searchName}
+      setSearchName={setSearchName}
+    />
   );
 }

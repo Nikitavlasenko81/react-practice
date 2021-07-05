@@ -53,13 +53,13 @@ const Table = ({ userList, setUserList, searchName, setSearchName }) => {
             placeholder="Add Description"
             type="text"
           />
-          <button type="button" onClick={createNewTask}>
+          <button type="button" onClick={createNewTask} className={style.addBtn}>
             Add new field ✓
           </button>
         </form>
       </Modal>
       <Search searchName={searchName} setSearchName={setSearchName} />
-      <button type="button" onClick={() => setModal(true)}>
+      <button type="button" onClick={() => setModal(true)} className={style.addBtn}>
         Add new field
       </button>
       <div>

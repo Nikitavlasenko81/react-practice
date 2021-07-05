@@ -34,22 +34,6 @@
 .table tbody tr td:last-child {
     border-radius: 0 8px 8px 0;
 }
-
-.search {
-    margin: 10px;
-    border-radius: 8px 0 0 8px;
-    display: inline-block;
-}
-.search input{
-    margin: 5px;
-    width: 400px;
-    height: 35px;
-    border-radius: 8px;
-    padding: 2px 12px;
-}
-.search input::placeholder {
-    color: black;
-}
 .addTaskForm{
     display: flex;
     align-items: center;
@@ -63,7 +47,7 @@
     padding: 2px 12px;
 }
 
-button {
+.addBtn {
     height: 38px;
     border-radius: 8px;
     border: 0px;
@@ -74,15 +58,14 @@ button {
     box-shadow: 0 -3px rgb(53 167 110) inset;
     transition: 0.2s;
 }
- button:hover {
+.addBtn:hover {
      background: rgb(53, 167, 110);
      cursor: pointer;
  }
-button:active {
+.addBtn:active {
     background: rgb(33,147,90);
     box-shadow: 0 3px rgb(33,147,90) inset;
 }
-
 
 
 

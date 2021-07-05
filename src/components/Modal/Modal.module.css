@@ -21,15 +21,17 @@
     padding: 20px;
     border-radius: 10px;
     overflow-y: scroll;
+    text-align: right;
 }
 .modal_body::-webkit-scrollbar{
     width: 0;
     background: transparent;
 }
 .modal_close{
-    text-align: right;
     cursor: pointer;
     font-size: 30px;
+    background: 0;
+    border: 0;
     margin-top: -15px;
 }
 

@@ -5,10 +5,9 @@ import style from './Modal.module.css';
 const Modal = ({ isOpend, onModalClose, ...props }) => (
   <div className={`${style.modal_wrapper} ${isOpend ? style.open : style.close}`}>
     <div className={style.modal_body}>
-      {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
-      <div className={style.modal_close} onClick={onModalClose}>
+      <button type="button" className={style.modal_close} onClick={onModalClose}>
         ×
-      </div>
+      </button>
       {props.children}
     </div>
   </div>
