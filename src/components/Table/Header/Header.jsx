@@ -1,6 +1,9 @@
 import React from 'react';
 
+
 const Header = () => (
+const Header = (props) => (
+
   <thead>
     <tr>
       <th>Id</th>
