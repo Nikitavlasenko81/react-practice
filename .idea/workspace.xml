@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:feature/table" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f6dc46b1-db28-45fa-bf64-f72f8e754d45" name="Default Changelist" comment="Done">
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+    </list>
+    <list id="28b0dcaf-e007-42e6-8214-116167247f2e" name="Revert &quot;commit 1&quot;" comment="Revert &quot;commit 1&quot;&#10;&#10;This reverts commit 5f52f5de" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1ui01XYbgkZKUDt3SjYaYWy7Ch4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../recap-js-training" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\Шаг Сайты\NIX\react-practice\node_modules\prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6dc46b1-db28-45fa-bf64-f72f8e754d45" name="Default Changelist" comment="" />
+      <created>1625132887803</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625132887803</updated>
+      <workItem from="1625132892487" duration="25404000" />
+      <workItem from="1625217695868" duration="2194000" />
+      <workItem from="1625219938570" duration="142000" />
+      <workItem from="1625220113141" duration="1392000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit 1">
+      <created>1625155911306</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1625155911306</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Done">
+      <created>1625217173186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1625217173186</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Done">
+      <created>1625217235366</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625217235366</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Done">
+      <created>1625221151093</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625221151093</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/table" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit 1" />
+    <MESSAGE value="Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Done" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="638" y="328" width="732" height="476" key="#ESLint" timestamp="1625155478963">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="638" y="328" width="732" height="476" key="#ESLint/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625150129592" />
+    <state x="638" y="328" key="#ESLint/0.0.1536.834@0.0.1536.834" timestamp="1625155478963" />
+    <state x="393" y="3" key="CommitChangelistDialog2" timestamp="1625221331342">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="393" y="3" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625221331342" />
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog" timestamp="1625219685531">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="648" key="DiffContextDialog/0.0.1536.834@0.0.1536.834" timestamp="1625219685531" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1625176485605">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625135942778" />
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1625176485605" />
+    <state x="637" y="315" key="Github.ShareDialog" timestamp="1625221094276">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="637" y="315" key="Github.ShareDialog/0.0.1536.834@0.0.1536.834" timestamp="1625221094276" />
+    <state width="1515" height="247" key="GridCell.Tab.0.bottom" timestamp="1625220418115">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.0.bottom/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625136663047" />
+    <state width="1515" height="247" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1625220418115" />
+    <state width="1515" height="247" key="GridCell.Tab.0.center" timestamp="1625220418114">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.0.center/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625136663047" />
+    <state width="1515" height="247" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1625220418114" />
+    <state width="1515" height="247" key="GridCell.Tab.0.left" timestamp="1625220418114">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.0.left/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625136663047" />
+    <state width="1515" height="247" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1625220418114" />
+    <state width="1515" height="247" key="GridCell.Tab.0.right" timestamp="1625220418115">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1515" height="254" key="GridCell.Tab.0.right/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625136663047" />
+    <state width="1515" height="247" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1625220418115" />
+    <state x="657" y="285" width="648" height="323" key="MultipleFileMergeDialog" timestamp="1625218266078">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="657" y="285" width="648" height="323" key="MultipleFileMergeDialog/0.0.1536.834@0.0.1536.834" timestamp="1625218266078" />
+    <state x="277" y="62" key="SettingsEditor" timestamp="1625134993998">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="277" y="62" key="SettingsEditor/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625134993998" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1625221180843">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625137040389" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1625221180843" />
+    <state x="550" y="130" key="git4idea.branch.GitSmartOperationDialog" timestamp="1625219085222">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="550" y="130" key="git4idea.branch.GitSmartOperationDialog/0.0.1536.834@0.0.1536.834" timestamp="1625219085222" />
+    <state x="536" y="279" key="git4idea.rebase.GitRebaseDialog" timestamp="1625221008469">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="536" y="279" key="git4idea.rebase.GitRebaseDialog/0.0.1536.834@0.0.1536.834" timestamp="1625221008469" />
+    <state x="535" y="319" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1625136862550">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="535" y="319" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.834/0.-1080.1536.834@0.0.1536.834" timestamp="1625136862550" />
+  </component>
+</project>

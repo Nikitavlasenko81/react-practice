@@ -1,0 +1,89 @@
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from 'react';\nimport Table from './components/Table/Table';\n\nexport function App() {\n  return <Table />;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/App.js	(revision 5f52f5dee1217a434f39759c1112f802c84b4233)
++++ src/App.js	(date 1625217866243)
+@@ -1,6 +1,5 @@
+ import React from 'react';
+-import Table from './components/Table/Table';
+ 
+ export function App() {
+-  return <Table />;
++  return <div>Hello world</div>;
+ }
+Index: src/components/Table/Row/Row.module.css
+===================================================================
+--- src/components/Table/Row/Row.module.css	(revision c199163b89dd86a5159ea97366850dbb457ed375)
++++ src/components/Table/Row/Row.module.css	(revision c199163b89dd86a5159ea97366850dbb457ed375)
+@@ -1,7 +0,0 @@
+-td{
+-    text-align: center;
+-}
+-.active{
+-    color: green;
+-font-weight: bolder;
+-}
+Index: src/components/Table/Table.module.css
+===================================================================
+--- src/components/Table/Table.module.css	(revision c199163b89dd86a5159ea97366850dbb457ed375)
++++ src/components/Table/Table.module.css	(revision c199163b89dd86a5159ea97366850dbb457ed375)
+@@ -1,55 +0,0 @@
+-.table {
+-    margin: 0 auto;
+-    width: 80%;
+-    border: none;
+-    margin-bottom: 20px;
+-}
+-.table thead th {
+-    font-weight: bold;
+-    text-align: left;
+-    border: none;
+-    padding: 10px 15px;
+-    background: #d8d8d8;
+-    font-size: 14px;
+-}
+-.table thead tr th:first-child {
+-    border-radius: 8px 0 0 8px;
+-}
+-.table thead tr th:last-child {
+-    border-radius: 0 8px 8px 0;
+-}
+-.table tbody td {
+-    font-family: Arial;
+-    text-align: left;
+-    border: none;
+-    padding: 10px 15px;
+-    font-size: 14px;
+-}
+-.table tbody tr:nth-child(even){
+-    background: #f3f3f3;
+-}
+-.table tbody tr td:first-child {
+-    border-radius: 8px 0 0 8px;
+-}
+-.table tbody tr td:last-child {
+-    border-radius: 0 8px 8px 0;
+-}
+-
+-.search {
+-    margin: 10px;
+-    border-radius: 8px 0 0 8px;
+-}
+-.search input{
+-    background: #d8d8d8;
+-    border: 0px;
+-     border-radius: 8px;
+-    color: black;
+-    height: 2.3em;
+-    width: 20em;
+-    padding: 10px;
+- }
+-.search input::placeholder {
+-    color: black;
+-}
+-
+-
