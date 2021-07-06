@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
 import Table from './Table';
+import Modal from '../Modal/Modal';
+import AddItemForm from './AddItemForm/AddItemForm';
 
 const TableContainer = ({ userList, setUserList }) => {
-  const [modal, setModal] = useState(false);
-  const [values, setValues] = useState({ addName: '', addDescription: '' });
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [searchName, setSearchName] = useState('');
 
-  const createNewTask = () => {
+  const createNewTask = (values) => {
     if (values.addName === '' || values.addDescription === '') {
       alert('Вы не ввели одно или несколько значений!');
     } else {
@@ -18,26 +19,31 @@ const TableContainer = ({ userList, setUserList }) => {
           name: values.addName,
           time: new Date(),
           description: values.addDescription,
-          done: false,
+          done: values.isDone,
         },
         ...userList,
       ]);
-      setModal(false);
-      setValues({ addName: '', addDescription: '' });
+      setIsModalOpen(false);
     }
   };
 
   return (
-    <Table
-      modal={modal}
-      setModal={setModal}
-      values={values}
-      setValues={setValues}
-      searchName={searchName}
-      setSearchName={setSearchName}
-      createNewTask={createNewTask}
-      userList={userList}
-    />
+    <>
+      <Table
+        setIsModalOpen={setIsModalOpen}
+        searchName={searchName}
+        setSearchName={setSearchName}
+        userList={userList}
+      />
+      <Modal
+        isModalOpen={isModalOpen}
+        onModalClose={() => {
+          setIsModalOpen(false);
+        }}
+      >
+        <AddItemForm createNewTask={createNewTask} />
+      </Modal>
+    </>
   );
 };
 

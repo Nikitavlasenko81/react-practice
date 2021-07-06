@@ -4,8 +4,9 @@ import dateFormat from 'dateformat';
 import style from './Row.module.css';
 
 const Row = ({ user }) => {
-  const data = dateFormat(new Date(user.time));
   const [isDone, setIsDone] = useState(user.done);
+
+  const data = dateFormat(new Date(user.time));
   return (
     <tr className={isDone ? style.active : ''}>
       <td>{user.name}</td>
