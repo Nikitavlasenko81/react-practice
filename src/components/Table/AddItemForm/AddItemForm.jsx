@@ -4,13 +4,19 @@ import style from './AddItemForm.module.css';
 
 const AddItemForm = ({ createNewTask }) => {
   const [values, setValues] = useState({ addName: '', addDescription: '', isDone: false });
+  const [openFormTime, setOpenFormTime] = useState('');
+
   const addNameRef = React.createRef();
+
+  const timeOfFillingForm = (openTime1, closeTime) => closeTime - openFormTime;
+
   useEffect(() => {
     addNameRef.current.focus();
+    setOpenFormTime(new Date());
   }, []);
 
   const hendleSubmit = () => {
-    createNewTask(values);
+    createNewTask(values, timeOfFillingForm(openFormTime, new Date()));
   };
   return (
     <form action="" className={style.addTaskForm}>
@@ -40,7 +46,7 @@ const AddItemForm = ({ createNewTask }) => {
         onChange={(event) => setValues({ ...values, isDone: !!event.target.value })}
       />
       <button type="button" onClick={hendleSubmit} className={style.addBtn}>
-        Add new field ✓
+        Add
       </button>
     </form>
   );

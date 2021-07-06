@@ -4,7 +4,7 @@ const Header = () => (
   <thead>
     <tr>
       <th>Name</th>
-      <th>Time</th>
+      <th>Filling time</th>
       <th>Description</th>
       <th>Done</th>
     </tr>

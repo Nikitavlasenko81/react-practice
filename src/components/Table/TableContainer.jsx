@@ -9,7 +9,7 @@ const TableContainer = ({ userList, setUserList }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [searchName, setSearchName] = useState('');
 
-  const createNewTask = (values) => {
+  const createNewTask = (values, timeOfFillingForm) => {
     if (values.addName === '' || values.addDescription === '') {
       alert('Вы не ввели одно или несколько значений!');
     } else {
@@ -17,7 +17,7 @@ const TableContainer = ({ userList, setUserList }) => {
         {
           id: uuidv4(),
           name: values.addName,
-          time: new Date(),
+          time: timeOfFillingForm,
           description: values.addDescription,
           done: values.isDone,
         },
