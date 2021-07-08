@@ -5,7 +5,7 @@ import Header from './Header/Header';
 import Row from './Row/Row';
 import Search from './Search/Search';
 
-const Table = ({ setIsModalOpen, searchName, setSearchName, userList }) => (
+const Table = ({ setIsModalOpen, searchName, setSearchName, data }) => (
   <div>
     <Search searchName={searchName} setSearchName={setSearchName} />
     <button type="button" onClick={() => setIsModalOpen(true)} className={style.addBtn}>
@@ -15,7 +15,7 @@ const Table = ({ setIsModalOpen, searchName, setSearchName, userList }) => (
       <table className={style.table}>
         <Header />
         <tbody>
-          {userList
+          {data
             .filter(({ name }) => name.toLowerCase().indexOf(searchName.toLowerCase()) !== -1)
             .map((user) => (
               <Row key={user.id} user={user} />
