@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { useFormik } from 'formik';
+import React, { useEffect, useState } from 'react';
+import { Form, Formik } from 'formik';
 
 import style from './AddItemForm.module.css';
+import InputForm from './InputForm';
 
 const AddItemForm = ({ createNewTask }) => {
   const [openFormTime, setOpenFormTime] = useState('');
@@ -11,50 +12,23 @@ const AddItemForm = ({ createNewTask }) => {
     createNewTask(values, timeOfFillingForm(openFormTime, new Date()));
   };
 
-  const formik = useFormik({
-    initialValues: { name: '', description: '', done: false },
-    onSubmit: handleSubmit,
-  });
-
-  const addNameRef = React.createRef();
-
   useEffect(() => {
-    addNameRef.current.focus();
     setOpenFormTime(new Date());
   }, []);
 
-  const isDesabled = formik.values.name === '' || formik.values.description === '';
   return (
-    <form action="" className={style.addTaskForm} onSubmit={formik.handleSubmit}>
-      <input
-        value={formik.values.name}
-        onChange={formik.handleChange}
-        name="name"
-        placeholder="Add Name"
-        type="text"
-        ref={addNameRef}
-      />
-      <input
-        value={formik.values.description}
-        onChange={formik.handleChange}
-        name="description"
-        placeholder="Add Description"
-        type="text"
-      />
-      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-      <label>Done</label>
-      <input
-        className={style.isDone}
-        type="checkbox"
-        name="done"
-        value={formik.values.done}
-        placeholder="Введите своё имя"
-        onChange={formik.handleChange}
-      />
-      <button type="submit" disabled={isDesabled} className={style.addBtn}>
-        Add
-      </button>
-    </form>
+    <>
+      <Formik initialValues={{ name: '', description: '', done: false }} onSubmit={handleSubmit}>
+        <Form className={style.addTaskForm}>
+          <InputForm name="name" placeholder="Enter Name" />
+          <InputForm name="description" placeholder="Enter description" />
+          <InputForm name="done" type="checkbox" />
+          <button type="submit" className={style.addBtn}>
+            Add
+          </button>
+        </Form>
+      </Formik>
+    </>
   );
 };
 
