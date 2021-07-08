@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
+import TextField from '@material-ui/core/TextField';
+import Checkbox from '@material-ui/core/Checkbox';
+import { makeStyles } from '@material-ui/core/styles';
 
 import style from './AddItemForm.module.css';
+
+const useStyles = makeStyles({
+  input: {
+    width: '400px',
+  },
+});
 
 const AddItemForm = ({ createNewTask }) => {
   const [openFormTime, setOpenFormTime] = useState('');
@@ -26,30 +35,33 @@ const AddItemForm = ({ createNewTask }) => {
   const isDesabled = formik.values.name === '' || formik.values.description === '';
   return (
     <form action="" className={style.addTaskForm} onSubmit={formik.handleSubmit}>
-      <input
+      <TextField
+        className={useStyles().input}
+        name="name"
+        id="standard-search"
+        label="Search field"
+        type="text"
         value={formik.values.name}
         onChange={formik.handleChange}
-        name="name"
         placeholder="Add Name"
-        type="text"
         ref={addNameRef}
       />
-      <input
+      <TextField
+        className={useStyles().input}
+        name="description"
+        id="standard-search"
+        label="Search field"
+        type="text"
         value={formik.values.description}
         onChange={formik.handleChange}
-        name="description"
-        placeholder="Add Description"
-        type="text"
+        placeholder="Add Name"
+        ref={addNameRef}
       />
-      {/* eslint-disable-next-line jsx-a11y/label-has-associated-control */}
-      <label>Done</label>
-      <input
-        className={style.isDone}
-        type="checkbox"
+      <Checkbox
         name="done"
-        value={formik.values.done}
-        placeholder="Введите своё имя"
+        checked={formik.values.done}
         onChange={formik.handleChange}
+        inputProps={{ 'aria-label': 'primary checkbox' }}
       />
       <button type="submit" disabled={isDesabled} className={style.addBtn}>
         Add
