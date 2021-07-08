@@ -1,30 +1,22 @@
 import React, { useState } from 'react';
-import { v4 as uuidv4 } from 'uuid';
 
+import { useTableApi } from '../../hooks/useTableApi';
 import Table from './Table';
 import Modal from '../Modal/Modal';
 import AddItemForm from './AddItemForm/AddItemForm';
 
-const TableContainer = ({ userList, setUserList }) => {
+const TableContainer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [searchName, setSearchName] = useState('');
+  const [data, api] = useTableApi('http://localhost:3004/users');
+  const { createData } = api;
 
   const createNewTask = (values, timeOfFillingForm) => {
-    if (values.addName === '' || values.addDescription === '') {
-      alert('Вы не ввели одно или несколько значений!');
-    } else {
-      setUserList([
-        {
-          id: uuidv4(),
-          name: values.addName,
-          time: timeOfFillingForm,
-          description: values.addDescription,
-          done: values.isDone,
-        },
-        ...userList,
-      ]);
-      setIsModalOpen(false);
-    }
+    createData({
+      ...values,
+      time: timeOfFillingForm,
+    });
+    setIsModalOpen(false);
   };
 
   return (
@@ -33,7 +25,7 @@ const TableContainer = ({ userList, setUserList }) => {
         setIsModalOpen={setIsModalOpen}
         searchName={searchName}
         setSearchName={setSearchName}
-        userList={userList}
+        data={data}
       />
       <Modal
         isModalOpen={isModalOpen}
