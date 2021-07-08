@@ -1,0 +1,37 @@
+.modal_wrapper{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0, .2);
+    backdrop-filter: blur(10px);
+}
+.modal_wrapper.open{
+    height: 100%;
+    display: block;
+}
+.modal_wrapper.close{
+    height: 0;
+    display: none;
+}
+.modal_body{
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    margin-top: 5%;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    text-align: right;
+}
+.modal_body::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+.modal_close{
+    cursor: pointer;
+    font-size: 30px;
+    background: 0;
+    border: 0;
+    margin-top: -15px;
+}
+
