@@ -1,38 +1,43 @@
 import React, { useState, useEffect } from 'react';
+import { useFormik } from 'formik';
 
 import style from './AddItemForm.module.css';
 
 const AddItemForm = ({ createNewTask }) => {
-  const [values, setValues] = useState({ name: '', description: '', done: false });
   const [openFormTime, setOpenFormTime] = useState('');
-  const isDesabled = values.addName === '' || values.addDescription === '';
-
-  const addNameRef = React.createRef();
 
   const timeOfFillingForm = (openTime1, closeTime) => closeTime - openFormTime;
+  const handleSubmit = (values) => {
+    createNewTask(values, timeOfFillingForm(openFormTime, new Date()));
+  };
+
+  const formik = useFormik({
+    initialValues: { name: '', description: '', done: false },
+    onSubmit: handleSubmit,
+  });
+
+  const addNameRef = React.createRef();
 
   useEffect(() => {
     addNameRef.current.focus();
     setOpenFormTime(new Date());
   }, []);
 
-  const handleSubmit = () => {
-    createNewTask(values, timeOfFillingForm(openFormTime, new Date()));
-  };
+  const isDesabled = formik.values.name === '' || formik.values.description === '';
   return (
-    <form action="" className={style.addTaskForm}>
+    <form action="" className={style.addTaskForm} onSubmit={formik.handleSubmit}>
       <input
-        value={values.name}
-        onChange={(event) => setValues({ ...values, name: event.target.value })}
-        name="addName"
+        value={formik.values.name}
+        onChange={formik.handleChange}
+        name="name"
         placeholder="Add Name"
         type="text"
         ref={addNameRef}
       />
       <input
-        value={values.description}
-        onChange={(event) => setValues({ ...values, description: event.target.value })}
-        name="addDescription"
+        value={formik.values.description}
+        onChange={formik.handleChange}
+        name="description"
         placeholder="Add Description"
         type="text"
       />
@@ -41,12 +46,12 @@ const AddItemForm = ({ createNewTask }) => {
       <input
         className={style.isDone}
         type="checkbox"
-        name="isDone"
-        value={values.done}
+        name="done"
+        value={formik.values.done}
         placeholder="Введите своё имя"
-        onChange={(event) => setValues({ ...values, done: !!event.target.value })}
+        onChange={formik.handleChange}
       />
-      <button type="button" disabled={isDesabled} onClick={handleSubmit} className={style.addBtn}>
+      <button type="submit" disabled={isDesabled} className={style.addBtn}>
         Add
       </button>
     </form>
