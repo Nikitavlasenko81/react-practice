@@ -15,18 +15,18 @@ const useStyles = makeStyles({
 
 const validationSchema = yup.object({
   name: yup
-    .string('Enter your email')
-    .max(20, 'Password should be of maximum 20 characters length')
-    .required('Email is required')
+    .string('Enter name of task')
+    .max(20, 'Name should be of maximum 20 characters length')
+    .required('Name is required')
     .matches(
       // eslint-disable-next-line no-useless-escape
       /^[^!@#$%^&*()_]$/,
       'It is forbidden to enter special characters'
     ),
   description: yup
-    .string('Enter your password')
-    .max(40, 'Password should be of maximum 40 characters length')
-    .required('Password is required'),
+    .string('Enter your description')
+    .max(40, 'Description should be of maximum 40 characters length')
+    .required('Description is required'),
 });
 
 const AddItemForm = ({ createNewTask }) => {
